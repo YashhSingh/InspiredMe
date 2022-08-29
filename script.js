@@ -12,8 +12,8 @@ class quote_search {
     _html_string(data_passed) {
         let html = data_passed.map(element => {
             return `  <li class="searched_item">
-        <p>${element.text}<br><br>
-           -${element.author}</p>
+        <p>${element.Text}<br><br>
+           -${element.Author}</p>
                    </li>`
         }).join(' ');
         searched_Ul.insertAdjacentHTML('beforeend', html)
