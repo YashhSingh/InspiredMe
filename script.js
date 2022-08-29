@@ -8,6 +8,7 @@ class quote_search {
     constructor() {
         search_btn.addEventListener('click', this._search_func.bind(this))
     }
+    //html to render
     _html_string(data_passed) {
         let html = data_passed.map(element => {
             return `  <li class="searched_item">
@@ -17,6 +18,8 @@ class quote_search {
         }).join(' ');
         searched_Ul.insertAdjacentHTML('beforeend', html)
     }
+    
+    //main search and display function
     async _search_func() {
         try {
             const searched_item = searchbar.value;
