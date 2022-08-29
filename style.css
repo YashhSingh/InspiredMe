@@ -1,0 +1,372 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Questrial", sans-serif;
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  transition: 0.4s ease;
+  scroll-behavior: smooth;
+}
+.nav_head {
+  height: 100vh;
+  width: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("/wallpaperflare.com_wallpaper\ \(4\).jpg");
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 4rem;
+}
+.navbar {
+  margin-top: 1.6rem;
+  position: relative;
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navUl {
+  list-style-type: none;
+}
+.nav_item {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.nav_item a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+.nav_item :hover {
+  transition: 0.4s ease;
+  background-color: rgb(255, 255, 255);
+  color: rgb(14, 14, 14);
+}
+.searchbar {
+  padding: 1rem 3rem;
+  width: 30%;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+}
+.header_line {
+  position: absolute;
+  top: 53%;
+  right: 15%;
+}
+.header_line h3 {
+  font-size: 4rem;
+}
+
+.brand_logo h2 {
+  font-size: 6rem;
+}
+.go_to_button {
+  position: absolute;
+  top: 77%;
+  right: 50%;
+  /* transform: translate(-50%, -50%); */
+}
+.go_to_button i {
+  color: rgb(14, 14, 14);
+
+  font-size: 2rem;
+  padding: 1.7rem 2rem 1.7rem 2rem;
+  border-radius: 4.5rem;
+  opacity: 0.4;
+  background-color: white;
+}
+.go_to_button :hover {
+  transition: 0.4s ease-in-out;
+  opacity: 1;
+  cursor: pointer;
+}
+.main {
+  height: 80vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.search_bar {
+  position: relative;
+  margin: 5rem 10rem 0rem 10rem;
+  display: flex;
+  height: 50%;
+  background-color: rgb(252, 252, 252);
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+}
+.searchbar {
+  border: 0.2rem solid rgb(40, 40, 40);
+  color: rgb(14, 14, 14);
+
+  font-weight: 800;
+}
+.search_bar i {
+  font-size: 2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  color: rgb(14, 14, 14);
+}
+.search_bar i:hover {
+  transition: 0.4s ease-in;
+  color: rgb(255, 255, 255);
+  background-color: rgb(22, 22, 22);
+}
+.search_results {
+  height: 50%;
+  width: inherit;
+  margin: 1rem 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searched_item {
+  max-width: 100%;
+  height: auto;
+  margin-top: 3rem;
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  /* border-bottom: rem solid gray; */
+}
+.searched_item p {
+  color: rgb(188, 116, 9);
+}
+.searched_item_list {
+  overflow-y: scroll;
+  max-height: 80%;
+  min-width: 60%;
+  max-width: 80%;
+  border-radius: 0.3rem;
+  box-shadow: -4px 4px 14px -4px rgba(29, 29, 29, 0.75);
+}
+.headline {
+  position: absolute;
+  top: 15%;
+  right: 41%;
+  padding: 1.4rem;
+  color: white;
+  background-color: rgb(14, 14, 14);
+  font-size: 3rem;
+}
+.headline:hover {
+  color: rgb(251, 222, 178);
+  cursor: pointer;
+}
+.for_u {
+  height: 70vh;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+}
+.main_item {
+  width: inherit;
+  height: 50%;
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem 7rem;
+}
+.main_item h2 {
+  color: rgb(14, 14, 14);
+  font-size: 6rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+.main_item p {
+  color: rgb(14, 14, 14);
+  text-align: left;
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  font-weight: 580;
+}
+.about_us {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.heading {
+  color: rgb(14, 14, 14);
+  font-size: 7rem;
+}
+.info_part {
+  height: 50%;
+  width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem 7rem;
+}
+.info_part p {
+  margin-top: 10rem;
+  color: rgb(14, 14, 14);
+  text-align: left;
+  font-size: 1.7rem;
+}
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 40rem;
+  max-height: 40rem;
+  margin-top: 10rem;
+  margin: 10rem 3rem;
+}
+.images img {
+  max-width: inherit;
+  max-height: inherit;
+}
+.footer {
+  height: 25vh;
+  width: 100%;
+  background-color: rgb(14, 14, 14);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.heading_last {
+  width: 100%;
+}
+.heading_last h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-top: 5rem;
+}
+.social_links {
+  text-align: center;
+  width: 70%;
+}
+.social_links a {
+  cursor: pointer;
+
+  font-size: 2.5rem;
+  margin: 0rem 2rem;
+}
+.insta:hover {
+  color: rgb(229, 64, 174);
+  transition: 0.3s ease-in;
+}
+.fb:hover {
+  color: #4267b2;
+  transition: 0.3s ease-in;
+}
+.link:hover {
+  color: #0072b1;
+  transition: 0.3s ease-in;
+}
+
+.hidden {
+  display: none;
+  text-align: center;
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: #e0e0e0;
+}
+/* __________RESPONSIVE STYLING___________ */
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media only screen and (max-width: 767.98px) {
+  html {
+    font-size: 50%;
+  }
+  /* .hidden {
+    display: block;
+    z-index: 1;
+    font-size: 3rem;
+  } */
+  .headline {
+    font-size: 2rem;
+  }
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media only screen and (max-width: 991.98px) {
+  html {
+    font-size: 50%;
+  }
+  .main_item h2 {
+    font-size: 5rem;
+  }
+  .main_item p {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+  }
+  .info_part p {
+    margin-top: 7rem;
+    font-size: 1.4rem;
+  }
+  .heading {
+    font-size: 6rem;
+  }
+  .images {
+    margin: 10rem 2rem;
+    max-width: 20rem;
+    max-height: 20rem;
+  }
+  .headline {
+    font-size: 1rem;
+    right: 3%;
+  }
+}
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media only screen and (max-width: 1199.98px) {
+  html {
+    font-size: 50%;
+  }
+  .header_line {
+    top: 50%;
+    left: 10%;
+    max-width: 45%;
+  }
+  .header_line h3 {
+    font-size: 4rem;
+  }
+  .headline {
+    font-size: 2.5rem;
+    right: 40%;
+  }
+  .images {
+    max-width: 20rem;
+    max-height: 20rem;
+  }
+  .main_item p {
+    font-size: 1.6rem;
+  }
+  .info_part p {
+    font-size: 1.6rem;
+  }
+}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media only screen and (max-width: 1399.98px) {
+  html {
+    font-size: 50%;
+  }
+  .header_line {
+    right: 15%;
+  }
+  .images {
+    max-width: 30rem;
+    max-height: 30rem;
+  }
+}
